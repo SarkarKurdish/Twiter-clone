@@ -1,0 +1,19 @@
+<% if(typeof errors !== 'undefined'){ %>
+    <div class="message-container">
+        <%errors.forEach((e) => { %>
+            <div class="error">
+                <p><%= e %></p>
+            </div>
+        <%});%> 
+    </div>
+<%}%>
+
+<% if(typeof  success !== 'undefined'){ %>
+    <div class="message-container">
+        <%success.forEach((s) => { %>
+            <div class="success">
+                <p><%= s %></p>
+            </div>
+        <%});%>
+    </div>
+<%}%>

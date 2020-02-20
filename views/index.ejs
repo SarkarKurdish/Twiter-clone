@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Twitter</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="user-left">
+            <div class="user-icon"> <a href="user/propic"> <img src="<%= userimg %>" alt="user-icon-image"> </a></div>
+            <p class="user-name"><%= user %></p>
+        </div>
+
+        <div class="brandLogo">
+            <h1>Twitter</h1>
+        </div>
+        
+        <div class="logout">
+            <a href="/logout">Log out</a>
+        </div>
+
+        <div class="postingHolder">
+            <h3>Post whatever you want</h3>
+            <form action="/home/post" method="post">
+                <div  class="postField"> <textarea name="article" rows="4" placeholder="Write something..."></textarea> </div>
+                <div class="postBtn"> <button type="submit">Tweet</button> </div>
+            </form>
+        </div>
+        <div class="post-holder">
+            <%- include('partials/articles') %>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Twitter Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <h1 class="login-title">Login</h1>
+        <%- include('partials/messages') %>
+        <form action="/login" method="post">
+            <div class="field-holder">
+                <label for="email">Email or username</label>
+                <input name="email" id="email" type="text" required>
+            </div>
+    
+            <div class="field-holder">
+                <label for="password">password</label>
+                <input name="password" id="password" type="password" required>
+            </div>
+    
+            <button type="submit">Login</button>
+            <p class="new-acc">Or <a href="/signup">create new account</a></p>
+        </form>
+
+    </div>
+</body>
+</html>

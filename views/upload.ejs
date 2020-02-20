@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Twitter - profile picture</title>
+</head>
+<body>
+    <div class="login-box">
+        <h1 class="login-title">Upload your profile picture</h1>
+        <form class="img-form" enctype="multipart/form-data" action="/user/propic" method="post">
+            <input class="up-img" type="file" name="picture" accept="image/png, image/jpeg"  required />
+            <button class="upload-btn" type="submit">Update</button>
+            <a class="later" href="/">Later</a>
+        </form>
+    </div>
+</body>
+</html>

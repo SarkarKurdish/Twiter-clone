@@ -1,0 +1,18 @@
+<% if(typeof  articles !== 'undefined'){ %>
+    <%articles.forEach((art) => {%>
+        <div class="post">
+            <div class="author">
+                <div class="author-img"><img src="<%= art.authorimg %>" alt="user-icon-image"> </div>
+                <p class="author-name"><%=art.author%></p>
+            </div>
+            <div class="auhtor-post">
+                <p><%=art.article%></p>
+            </div>
+            <div class="likes">
+                <div class="like"></div>
+                <div class="like"></div>
+                <div class="like"></div>
+            </div>
+        </div>
+    <%})%>
+<%}%>

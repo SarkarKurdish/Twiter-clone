@@ -1,0 +1,167 @@
+/*  #0084ff */
+
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box{
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.274);
+    width: 30%;
+    padding: 30px 40px;
+    margin: 0 auto;
+
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.login-title{
+    text-align: center;
+    color: #0084ff;
+    margin: 5px 0 15px;
+}
+
+.field-holder{
+
+    width: 100%;
+    margin: 25px auto;
+    color: #0084ff;
+}
+
+.field-holder input{
+    width: 90%;
+    border: 1px solid #0084ff;
+    border-bottom: 3px solid #0084ff;
+    padding: 10px;
+}
+
+.field-holder label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.new-acc{
+    display: inline;
+}
+
+.new-acc a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.1s;
+}
+
+.new-acc a:hover{
+    text-decoration: none;
+    color: #0084ff;
+}
+
+button{
+    background-color: #0084ff;
+    border: 0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.1s;
+}
+
+button:hover{
+    background-color: #006ace;
+}
+
+
+.ps-hint{
+    margin: 0;
+    font-size: .7rem;
+    color: black;
+}
+
+.message-container{
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.message-container .error{
+    background-color: #FFF3CD;
+    border: 1px solid rgb(209, 199, 166);
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+.message-container .success{
+    background-color: rgb(205, 239, 255);
+    border: 1px solid rgb(166, 185, 209);
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+.img-form{
+    width: 100%;
+    height: 100%;
+}
+.up-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.upload-btn{
+    width: 100px;
+    text-align: center;
+    display: block;
+    margin: 25px auto 0;
+}
+
+@media screen and (max-width: 1020px){
+    .login-box{
+        width: 45%;
+        /* padding: 50px 40px; */
+    }
+}
+
+@media screen and (max-width: 680px){
+    .login-box{
+        width: 50%;
+        /* padding: 50px 40px; */
+    }
+}
+
+@media screen and (max-width: 575px){
+    .new-acc{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .login-box{
+        padding: 5px 20px;
+    }
+}
+
+.later{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #006ace;;
+
+}
+
+
+
+
+
+
+
+
+
+

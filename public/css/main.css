@@ -1,0 +1,302 @@
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    margin: 0;
+    background-color: white;
+    padding: 0;
+}
+
+/* GRID  */
+.grid-container{
+    display: grid;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+
+    grid-template-areas:
+    "user     title      logout"
+    "posting  posting   posting"
+    "post     post      post";
+}
+
+.user-left{
+    grid-area: user;
+}
+
+.brandLogo{
+    grid-area: title;
+}
+
+.logout{
+    grid-area: logout;
+}
+
+.postingHolder{
+    grid-area: posting;
+}
+
+.post-holder{
+    grid-area: post;
+}
+
+/* END GRID */
+
+
+.user-left{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.user-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(187, 187, 187);
+    overflow: hidden;
+}
+
+.user-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-name{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* Brand LOGO */
+.brandLogo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.brandLogo h1{
+    margin: 0 auto;
+    color: rgb(81, 152, 218);
+    font-size: 2.3rem;
+}
+
+.logout{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.logout a{
+    color: rgb(81, 152, 218);
+    text-decoration: none;
+}
+
+/* POSTING */
+
+.postingHolder{
+    margin: 15px auto;
+    padding: 10px;
+    width: 50%;
+    height: 220px;
+
+    background-color: white;
+
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.274);
+}
+
+.postingHolder h3{
+    margin: 10px 0;
+    text-align: center;
+    padding-bottom: 13px;
+    border-bottom: 1px solid;
+    color: rgb(218, 218, 218);
+}
+
+.postField textarea{
+    resize: none;
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    border: 0;
+}
+
+.postBtn{
+    margin-top: 8px;
+    border-top: 1px solid;
+    padding: 5px;
+    color: rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.postBtn button{
+    margin-top: 10px;
+    text-align: right;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(81, 152, 218);
+    padding: 6px 10px; 
+    color: white;
+}
+
+
+/* POST */
+
+.post-holder{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.post{
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.274);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px auto;
+    width: 50%;
+}
+
+.author{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    color: rgb(218, 218, 218);
+}
+.author-img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:rgb(187, 187, 187);
+    overflow: hidden;
+}
+
+.author-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.author-name{
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Author Post */
+.auhtor-post{
+    color: rgb(34, 34, 34);
+    width: 92%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    line-height: 1.4;
+}
+
+
+.likes{
+    border-top: 1px solid;
+    color: rgb(218, 218, 218);
+    padding: 10px;
+}
+
+.like{
+    width:20px;
+    height: 20px;
+    background-color:rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 1px 0 0;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1081px){
+    .grid-container{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    .postingHolder{
+        width: 70%;
+    }
+
+    .post{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .postingHolder{
+        width: 75%;
+    }
+
+    .post{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 465px){
+    .postingHolder{
+        width: 85%;
+    }
+
+    .post{
+        width: 85%;
+    }
+
+    .user-icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-name{
+        margin-left: 5px;
+        font-size: 0.9rem;
+    }
+
+    .brandLogo h1{
+        font-size: 1.9rem;
+    }
+
+    .logout{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
